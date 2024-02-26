@@ -1,0 +1,21 @@
+<table>
+    <a href="/articles/{{article.bno}}/edit">수정</a>
+    <a href="/articles/{{article.bno}}/delete">삭제</a>
+    <a href="/articles">목록 가기</a>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#article}}
+    <tr>
+        <td>{{bno}}</td>
+        <td>{{title}}</td>
+        <td>{{content}}</td>
+    </tr>
+    {{/article}}
+    </tbody>
+</table>

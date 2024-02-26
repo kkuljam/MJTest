@@ -1,0 +1,9 @@
+{{#article}}
+    <form action="/articles/update" method="post">
+        <input name="bno" type="hidden" value="{{bno}}">
+        제목: <input name="title" value="{{title}}"/><br/>
+        내용: <textarea name="content">{{content}}</textarea><br/>
+        <button type="submit">submit</button>
+        <a href="/articles/{{bno}}">뒤로가기</a>
+    </form>
+{{/article}}
